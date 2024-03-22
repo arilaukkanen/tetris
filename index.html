@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="Tetris" ng-keydown="keydown($event)">
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="tetris.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Tetris</title>
+	</head>
+	<body id="tetrisBody" ng-controller="GameController" >
+		<div class="main">
+			<table class="mainTable">
+				<tr>
+					<td>
+						<table class="gameTable" >
+							<tr ng-repeat="row in gameBoard | slice:2:26">
+								<td class="gameTd" ng-repeat="tile in row">
+									<div class="tile_{{ tile.color }}"></div>
+								</td>
+							</tr>
+						</table>
+						
+					</td>
+					<td class="infoPanel">
+						<div class="gameTitle">TETRIS</div>
+						<div class="title">NEXT</div>
+						<div class="nextPiece">
+							<table class="nextPiece">
+								<tr ng-repeat="row in nextPieceTable">
+								<td class="gameTd" ng-repeat="tile in row">
+									<div class="tile_{{ tile.color }}"></div>
+								</td>
+								</tr>
+							</table>
+						</div>
+						<div class="title">SCORE</div>
+						<div class="level">
+							{{ score }}
+						</div>
+						
+						<div class="title">LEVEL</div>
+						<div class="level">
+							{{ level }}
+						</div>
+						<div class="title">LINES</div>
+						<div class="level">
+							{{ linesCleared }}
+						</div>
+					</td>
+				</tr>
+
+			</table>
+			<p>	
+			<!-- <button class="start" ng-hide="gameStarted" ng-click="startGame()">START</button> -->
+			<div class="gameStartPopup" ng-show="gameStartPopup">
+				<font style="font-size:30px">TETRIS</font><br>
+				<div class="highScoreTitle">HIGH SCORES</div>
+				<table class="highScores">
+					<tr ng-repeat="row in highScores">
+						<td class="highScoreName">{{row.name}}</td>
+						<td class="highScoreScore">{{row.score}}</td>
+					</tr>
+				</table>
+				<div class="newGameButton" ng-click="startGame()">START</div>
+			</div>
+			<div class="gameOverPopup" ng-show="gameOverPopup">
+				GAME OVER
+			</div>
+			<div class="nameInputPopup" ng-show="nameInputPopup">
+				TYPE YOUR NAME
+				<input class="nameInput" ng-model="userName" maxlength="12" autofocus></input>
+				<div class="saveScoreButton" ng-click="saveScore()">SAVE</div>
+			</div>
+		</div>
+
+	</body>
+</html>

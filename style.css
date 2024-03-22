@@ -1,0 +1,404 @@
+
+html { height: 100%; }
+
+/*div.wrap { height:100%; overflow:hidden; }*/
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+/*  background: -webkit-radial-gradient(#f2a7a7, Black);
+  background: -o-radial-gradient(#f2a7a7, Black);
+  background: -moz-radial-gradient(#f2a7a7, Black);*/
+  background: radial-gradient(#223344, Black);
+  background: url("pattern-czr6.png");
+  color: #cccccc;
+  font-family: Arial;
+  margin-top: 30px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 1px 1px 4px #111111;
+  transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+
+div.main {
+  position: relative;
+}
+
+table.mainTable {
+    background: linear-gradient(#555560, #555559);
+    background: url("pattern-177o.png");
+     
+    /*background:LightBlue;*/
+    border: 2px solid #444444;
+    border-radius: 30px;
+    /*padding:30px;*/
+    box-shadow: 17px 17px 40px #111111;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    table-layout: fixed;
+}
+
+td.infoPanel {
+    /*background:LightCoral;*/
+    width: 140px;
+    vertical-align: top;
+    margin-left: 10px;
+    padding:20px;
+}
+
+div.nextPiece {
+    background: radial-gradient(#020202, #000000);
+    /*background: Black;*/
+    height: 80px;
+    border: 4px solid #777777;
+    border-radius: 10px;
+    padding:00px;
+    box-shadow: 10px 10px 30px #111111;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    vertical-align: center;
+    
+}
+
+div.score {
+    background: radial-gradient(#999999, #666666);
+    color: #272727;
+    font-family: Courier New;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #111111;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 1px 1px 5px #111111;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: 30px;
+    text-align: center;
+    vertical-align: center;
+    
+}
+
+div.level {
+    background: radial-gradient(#020202, #000000);
+    /*background: Black;*/
+    /*height: 80px;*/
+    font-size: 20px;
+    border: 4px solid #777777;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 10px 10px 30px #111111;
+    margin-top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    vertical-align: center;
+    
+}
+
+div.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #000000;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.gameTitle {
+    /*color:#EEEEFF;*/
+    text-shadow: 1px 1px 10px #000000;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+table.gameTable {
+  background: linear-gradient(#333333, #111111);
+
+  background:Black;
+  
+  border: 2px solid #777777;
+  border-radius: 10px;
+  padding:20px;
+  box-shadow: 10px 10px 30px #111111;
+  border-collapse: collapse;
+  margin-top:0px;
+  margin-left: 30px;
+  margin-right: auto;
+  text-align: center;
+  table-layout: fixed;
+
+}
+
+table.nextPiece {
+    background: Black;
+    /*background: linear-gradient(#333333, #111111);*/
+    padding: 10px;
+    margin-top:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    text-align: center;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+
+table.highScores {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 120px;
+}
+
+td.highScoreName {
+    text-align: left;
+}
+
+td.highScoreScore {
+    text-align: right;
+}
+
+td.gameTd {
+  /*border: 1px solid black;*/
+  border:none;
+  /*width:3px;
+  height:3px;*/
+}
+
+div.scoreDiv {
+  color: #888899;
+  color: #777777;
+  margin-top:10px;
+  font-size: 24px;
+  text-shadow: 1px 1px 4px #555555;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  background: linear-gradient(#333333, #111111);
+  /*background: linear-gradient(#aaaaaa, #888888);
+  /*background:LightBlue;*/
+  
+
+  border: 1px solid #555555;
+  border-radius: 10px;
+  padding:5px;
+  box-shadow: 10px 10px 20px #111111;
+  width:80px;
+
+}
+
+div.gameStartPopup {
+  z-index: 1;
+  position: absolute;
+  border: 4px solid #c0c0c0;
+  border-radius: 10px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 175px;
+  height: 290px;
+  margin-top: -175px;
+  margin-left: -188px;
+  background: radial-gradient(#445566, Black);
+  box-shadow: 10px 10px 20px #111111;
+  opacity: 0.9;
+
+}
+
+div.gameOverPopup {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    margin-top: -80px;
+    margin-left: -225px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 4px 4px 12px #000000;
+    color: #e0e0e0;
+    opacity: 0.8;
+}
+
+div.highScoreTitle {
+    font-size:13px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    /*-webkit-transform: scaleX(1.2);*/
+}
+
+div.newGameButton {
+  background-color: #445588;
+  color: #cccccc;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 4px solid #BBBBBB;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #999999;
+  text-shadow: 1px 1px 4px #999999;
+  transition: 0.3s ease-in-out;
+  width: 60%;
+  cursor: default;
+}
+
+div.newGameButton:hover {
+  background-color: #4A5A8A;
+  box-shadow: 1px 1px 15px #AAAAAA;
+}
+
+
+div.nameInputPopup {
+    z-index: 1;
+    position: absolute;
+    border: 4px solid #c0c0c0;
+    border-radius: 10px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 175px;
+    height: 130px;
+    margin-top: -90px;
+    margin-left: -188px;
+    background: radial-gradient(#445566, Black);
+    box-shadow: 10px 10px 20px #111111;
+    opacity: 0.9;
+
+}
+
+div.saveScoreButton {
+  background-color: #445588;
+  color: #cccccc;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 4px solid #BBBBBB;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #999999;
+  text-shadow: 1px 1px 4px #999999;
+  transition: 0.3s ease-in-out;
+  width: 60%;
+  cursor: default;
+}
+
+div.saveScoreButton:hover {
+  background-color: #4A5A8A;
+  box-shadow: 1px 1px 15px #AAAAAA;
+}
+
+
+input.nameInput {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+  font-size: 13px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+
+}
+
+
+
+/*['red', 'blue', 'yellow', 'green', 'purple']*/
+
+div.tile_1 {
+  padding:10px;
+  background-color:red;
+  background: radial-gradient(Red, DarkRed);
+  border-radius: 3px;
+}
+
+div.tile_2 {
+  padding:10px;
+  background-color:Blue;
+  background: radial-gradient(#8888FF, Blue);
+  border-radius: 3px;
+}
+
+div.tile_3 {
+  padding:10px;
+  background-color:Yellow;
+  background: radial-gradient(Yellow, Orange);
+  border-radius: 3px;
+}
+
+div.tile_4 {
+  padding:10px;
+  background-color:Green;
+  background: radial-gradient(#88EE88, Green);
+  border-radius: 3px;
+}
+
+div.tile_5 {
+  padding:10px;
+  background-color:Purple;
+  background: radial-gradient(#EE55EE, Purple);
+  border-radius: 3px;
+}
+
+div.tile_6 {
+  padding:10px;
+  background-color:Purple;
+  background: radial-gradient(#f5f5f5, #333333);
+  border-radius: 3px;
+}
+
+div.tile_7 {
+  padding:10px;
+  background-color:Purple;
+  background: radial-gradient(#EE6044, Orange);
+  border-radius: 3px;
+}
+
+div.tile_0 {
+  padding:10px;
+  background-color:black;
+  border-radius: 3px;
+}
+
+
+
+div.omadiv {
+  background-color:red;
+}
